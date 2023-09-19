@@ -8,7 +8,7 @@ norns is many sound instruments. it connects to grids, MIDI, and other objects. 
 ## quick reference
 
 ```
-git clone [https://github.com/rithwikmakesthings/norns.git](https://github.com/rithwikmakesthings/norns.git)
+git clone (https://github.com/rithwikmakesthings/norns.git)
 cd norns
 git submodule update --init --recursive
 ./waf configure --release
