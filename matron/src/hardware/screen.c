@@ -84,7 +84,7 @@ static FT_Face face[NUM_FONTS];
 static double text_xy[2];
 
 void screen_init(void) {
-    surface = cairo_image_surface_create(CAIRO_FORMAT_ARGB32, 128, 64);
+    surface = cairo_image_surface_create(CAIRO_FORMAT_ARGB32, 800, 480);
     cr = cr_primary = cairo_create(surface);
 
     status = FT_Init_FreeType(&value);
@@ -194,6 +194,7 @@ void screen_init(void) {
     }
 
     cairo_set_operator(cr, CAIRO_OPERATOR_CLEAR);
+    cairo_scale(cr, 1.0, 1.0);
     cairo_paint(cr);
     cairo_set_operator(cr, CAIRO_OPERATOR_OVER);
 
